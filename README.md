@@ -4,7 +4,7 @@
 
 >	struktura drzewiasta ma umożliwiać działanie na dowolnej ilości poziomów,
 
-Done. Do przechowywania ścieżki węzła wykorzystałem typ ltree
+Done. Do przechowywania ścieżki węzła wykorzystałem typ postgres ltree
 
 >	funkcje jakie mają być dostępne dla administratora: dodawanie, edycja, usuwania, sortowanie (zarówno węzłów jak i liści), przenoszenie 
 węzłów do innych gałęzi,
