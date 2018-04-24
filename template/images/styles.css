@@ -1,0 +1,180 @@
+@import url('//fonts.googleapis.com/css?family=Lato');
+body {
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+nav {
+	font-weight: lighter;
+}
+
+button {
+	border:	none;
+}
+
+* {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#nav-main,
+#footer {
+	position: relative;
+	z-index: 2;
+	background-color: #033a5d;
+}
+
+#nav-main {
+	margin-bottom: 106px;
+}
+
+#nav-main-content,
+main {
+	margin-left: auto;
+	margin-right: auto;
+	width: 998px;
+}
+
+#nav-main-content {
+	box-sizing: border-box;
+	height: 88px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#nav-main-content > a {
+	padding: 25px 0;
+}
+
+#nav-main-logo-link {
+	padding: 26px !important;
+	align-self: flex-start;
+	background-color: #fff;
+	box-shadow: 3px 5px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+#nav-main-search {
+	position: absolute;
+	bottom: 18px;
+	right: 18px;
+}
+
+#nav-main-search input {
+	position: relative;
+	top: -15px;
+}
+
+#nav-main-search > label::after {
+	display: inline-block;
+	content: "";
+	width: 31px;
+	height: 32px;
+	background: url('iconmonstr-magnifier-icon.png') 50% / contain no-repeat;
+}
+
+aside {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 214px;
+	padding: 135px 45px;
+	box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	transition: .5s transform;
+}
+
+body:not(.aside-active) > aside {
+	transform: translateX(-188px);
+}
+
+h1 {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.nav-aside-section:not(:last-child),
+h1 {
+	border-bottom: 1px dotted #023a5c;
+}
+
+.nav-aside-section > a,
+h1 {
+	color: #023a5c;
+}
+
+.nav-aside-section > a {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #023a5c;
+	display: block;
+}
+
+.nav-aside-section > a:first-child {
+	margin-top: 20px;
+}
+
+#nav-aside-toggle {
+	cursor: pointer;
+	position: absolute;
+	right: 5px;
+	top: 500px;
+	width: 16px;
+	height: 19px;
+	background:	url('Shape 30 copy.png');
+}
+
+body:not(.aside-active) > aside > #nav-aside-toggle {
+	transform: rotate(180deg);
+}
+
+main {
+	flex: 1;
+}
+
+h2 {
+	font-weight: lighter;
+	font-size: 17px;
+}
+
+main > div {
+	column-count: 2;
+}
+
+main p {
+	margin-top: 0;
+}
+
+h3 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: lighter;
+}
+
+input {
+	background-color: #7592a8;
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.24) inset;
+	border: 1px solid #373749;
+	transition: .5s transform;
+	transform-origin: right;
+}
+
+input:not(:focus) {
+	transform: scaleX(0);
+}
+
+/* Footer */
+#footer {
+	height: 70px;
+}
